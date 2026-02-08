@@ -157,17 +157,3 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 });
-
-// MUSIC PLAY BUTTON LOGIC
-const musicBtn = document.getElementById("musicBtn");
-const bgMusic = document.getElementById("bgMusic");
-
-musicBtn.addEventListener("click", () => {
-  if (bgMusic.paused) {
-    bgMusic.play();
-    musicBtn.textContent = "⏸ Pause Music";
-  } else {
-    bgMusic.pause();
-    musicBtn.textContent = "▶ Play Music";
-  }
-});
