@@ -157,3 +157,12 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 });
+
+// MUSIC PLAY BUTTON LOGIC
+const musicBtn = document.getElementById("musicBtn");
+const bgMusic = document.getElementById("bgMusic");
+
+musicBtn.addEventListener("click", () => {
+  bgMusic.play();
+  musicBtn.style.display = "none"; // optional: hides button after click
+});
